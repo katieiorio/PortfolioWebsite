@@ -3,6 +3,7 @@ nav {
     justify-content: flex-end;
     margin-top: 4vh;
     margin-right: 2vw;
+    margin-bottom: 4vh;
 }
 
 .navLinks {
@@ -24,24 +25,70 @@ nav {
     background-color: transparent;
 }
 
-.projectBoxes {
-    margin: 15px;
+#homeImageLink1 {
+    float: left;
+    width: 50%;
+    background-color: black;
 }
 
-.homeImages {
-    width: 48vw;
+#homeImageLink2 {
+    float: right;
+    width: 50%;
+    background-color: black;   
+}
+#homeImageLink3 {
+    float: left;
+    width: 50%;
+    background-color: black;
+}
+#homeImageLink4 {
+    float: right;
+    width: 50%;
+    background-color: black;
+}
+.homeImageLinks:hover {
+    opacity: 0.35;
+}
+.homeImageLinks{
+
+}
+.homeImageHoverTitle {
+    position: absolute;
+
 }
 
-.row {
+
+
+
+#homeImageLink11 {
+    float: left;
+    background-color: black;
+    width: 50%;
+}
+
+#homeImageLink22 {
+    float: right;
+    background-color: black;   
+    width: 50%;
+}
+#div1 {
+    float: left;
+    background-color: black;
+    width: 50%;
+}
+
+#div2 {
+    float: right;
+    background-color: black;
+    width: 50%;   
+}
+
+.flex {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
+    justify-content: center;
 }
 
-.column {
+.practice {
     display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
+
 }
