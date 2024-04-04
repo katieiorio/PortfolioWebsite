@@ -1,20 +1,30 @@
+body {
+    margin: 3em;
+}
+
 nav {
     display: flex;
     justify-content: flex-end;
     margin-top: 4vh;
-    margin-right: 2vw;
     margin-bottom: 4vh;
+    height: 17vh;
+    align-items: center;
+}
+
+#logo {
+    flex-grow: 1;
+    height: 30px;
 }
 
 .navLinks {
     font-family: "Quicksand", sans-serif;
     color: #141414;
     text-decoration: none;
-    width: 15vh;
-    text-align: center;
+    width: 10vh;
+    text-align: end;
     background-color: transparent;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 35px;
+    margin-right: 0px;
 }
 
 .navLinks:hover {
@@ -28,67 +38,55 @@ nav {
 #homeImageLink1 {
     float: left;
     width: 50%;
-    background-color: black;
+    aspect-ratio: 9/5;
+    background-image: url("img/pic1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #homeImageLink2 {
     float: right;
     width: 50%;
-    background-color: black;   
-}
-#homeImageLink3 {
-    float: left;
-    width: 50%;
-    background-color: black;
-}
-#homeImageLink4 {
-    float: right;
-    width: 50%;
-    background-color: black;
-}
-.homeImageLinks:hover {
-    opacity: 0.35;
-}
-.homeImageLinks{
-
-}
-.homeImageHoverTitle {
-    position: absolute;
-
-}
-
-
-
-
-#homeImageLink11 {
-    float: left;
-    background-color: black;
-    width: 50%;
-}
-
-#homeImageLink22 {
-    float: right;
-    background-color: black;   
-    width: 50%;
-}
-#div1 {
-    float: left;
-    background-color: black;
-    width: 50%;
-}
-
-#div2 {
-    float: right;
-    background-color: black;
-    width: 50%;   
-}
-
-.flex {
+    aspect-ratio: 9/5;
+    background-image: url("img/pic2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 
-.practice {
+#homeImageLink3 {
+    float: left;
+    width: 50%;
+    aspect-ratio: 9/5;
+    background-image: url("img/pic3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+#homeImageLink4 {
+    float: right;
+    width: 50%;
+    aspect-ratio: 9/5;
+    background-image: url("img/pic4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.homeImageHoverTitle {
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    color: #141414;
+    text-decoration: none;
+    font-size: 1.7em;
 }
