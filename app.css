@@ -8,12 +8,12 @@ nav {
     margin-top: 4vh;
     margin-bottom: 4vh;
     height: 17vh;
-    align-items: center;
+    align-items: end;
 }
 
 #logo {
     flex-grow: 1;
-    height: 30px;
+    width: 300px;
 }
 
 .navLinks {
@@ -25,6 +25,7 @@ nav {
     background-color: transparent;
     margin-left: 35px;
     margin-right: 0px;
+    margin-bottom: 5px;
 }
 
 .navLinks:hover {
