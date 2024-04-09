@@ -1,5 +1,8 @@
 body {
-    margin: 3em;
+    margin: 59px;
+    height: auto;
+    position: relative;
+    min-height: 100vh;
 }
 
 nav {
@@ -25,6 +28,7 @@ nav {
     background-color: transparent;
     width: 11vh;
     margin-bottom: 3px;
+    margin-left: 35px;
 }
 
 .navLinks:hover {
@@ -33,7 +37,7 @@ nav {
     text-decoration: none;
     font-weight: 400;
     background-color: transparent;
-    
+
 }
 
 .navLinksDiv {
@@ -42,9 +46,17 @@ nav {
     justify-content: center;
 }
 
+.imageLinkContainer {
+    height: 100vh;
+}
+
+.rows {
+    display: flex;
+    flex-direction: row;
+}
+
 #homeImageLink1 {
-    float: left;
-    width: 50%;
+    width: 100%;
     aspect-ratio: 9/5;
     background-image: url("img/pic1.jpg");
     background-size: cover;
@@ -55,8 +67,7 @@ nav {
 }
 
 #homeImageLink2 {
-    float: right;
-    width: 50%;
+    width: 100%;
     aspect-ratio: 9/5;
     background-image: url("img/pic2.jpg");
     background-size: cover;
@@ -67,8 +78,7 @@ nav {
 }
 
 #homeImageLink3 {
-    float: left;
-    width: 50%;
+    width: 100%;
     aspect-ratio: 9/5;
     background-image: url("img/pic3.jpg");
     background-size: cover;
@@ -79,8 +89,7 @@ nav {
 }
 
 #homeImageLink4 {
-    float: right;
-    width: 50%;
+    width: 100%;
     aspect-ratio: 9/5;
     background-image: url("img/pic4.jpg");
     background-size: cover;
@@ -108,22 +117,57 @@ nav {
     margin-bottom: 0px;
 }
 
+footer {
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    color: #141414;
+    position: relative;
+    height: 10vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.footerElement {
+    margin-right: 40px;
+}
 
 
 
 
 @media screen and (max-width: 768px) {
-    #homeImageLink1, #homeImageLink2, #homeImageLink3, #homeImageLink4 {
-        width: 100%;
-    }
-    nav {
+
+    .rows {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .navLinks{
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5vh;
+    }
+
+    .navLinks {
         margin-top: 2.5vh;
         margin-bottom: 2.5vh;
     }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+        height: 25vh;
     }
+
+    .footerElement {
+        margin-right: 40px;
+        margin-top: 5px;
+    }
+}
