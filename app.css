@@ -21,23 +21,19 @@ nav {
 
 .navLinks {
     font-family: "Quicksand", sans-serif;
-    font-weight: 100;
+    font-weight: 400;
     color: #141414;
-    text-decoration: none;
     text-align: center;
     background-color: transparent;
-    width: 11vh;
+    width: 14vh;
     margin-bottom: 3px;
-    margin-left: 35px;
 }
 
 .navLinks:hover {
-    font-family: "Quicksand", sans-serif;
-    color: #141414;
     text-decoration: none;
-    font-weight: 400;
-    background-color: transparent;
-
+    font-family: "Quicksand", sans-serif;
+    text-decoration: none;
+    color: #5386E4;
 }
 
 .navLinksDiv {
@@ -121,21 +117,28 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    justify-content: center;
 }
 
 #headshot {
     width: 35vw;
     height: auto;
     object-fit: contain;
+    padding-right: 40px;
 }
 
 .aboutText {
-    padding-left: 40px;
     font-family: "Quicksand", sans-serif;
     color: #141414;
     text-decoration: none;
     font-size: 16px;
     align-items: flex-start;
+    width: 700px;
+    margin-top: 0px;
+}
+
+p {
+    margin-top: 0px;
 }
 
 .aboutHeader {
@@ -162,12 +165,24 @@ footer {
 
 .footerElement {
     margin-right: 40px;
+    margin-left: 40px;
+}
+
+footer a {
+    color: #141414;
+}
+footer a:hover {
+    text-decoration: none;
+    font-family: "Quicksand", sans-serif;
+    color: #141414;
+    text-decoration: none;
+    color: #5386E4;
 }
 
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1110px) {
 
     .rows {
         display: flex;
@@ -207,9 +222,16 @@ footer {
         align-items: center;
     }
 
+    .aboutText{
+        width: 60vw;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
     #headshot {
-        width: 70vw;
+        width: 60vw;
         height: auto;
         object-fit: contain;
+        padding-right: 0px;
     }
 }
