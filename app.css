@@ -117,12 +117,42 @@ nav {
     margin-bottom: 0px;
 }
 
+.aboutContent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+#headshot {
+    width: 35vw;
+    height: auto;
+    object-fit: contain;
+}
+
+.aboutText {
+    padding-left: 40px;
+    font-family: "Quicksand", sans-serif;
+    color: #141414;
+    text-decoration: none;
+    font-size: 16px;
+    align-items: flex-start;
+}
+
+.aboutHeader {
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    color: #141414;
+    font-weight: 400;
+    margin-bottom: 45px;
+    margin-top: 25px;
+}
+
 footer {
     text-align: center;
     font-family: "Quicksand", sans-serif;
     color: #141414;
     position: relative;
-    height: 10vh;
+    height: 15vh;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -169,5 +199,17 @@ footer {
     .footerElement {
         margin-right: 40px;
         margin-top: 5px;
+    }
+
+    .aboutContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #headshot {
+        width: 70vw;
+        height: auto;
+        object-fit: contain;
     }
 }
