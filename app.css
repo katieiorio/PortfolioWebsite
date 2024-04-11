@@ -1,5 +1,5 @@
 body {
-    margin: 59px;
+    margin: 0px;
     height: auto;
     position: relative;
     min-height: 100vh;
@@ -8,10 +8,12 @@ body {
 nav {
     display: flex;
     justify-content: center;
-    margin-top: 0vh;
+    margin-top: 2.5vh;
     margin-bottom: 3vh;
     height: 12vh;
     align-items: flex-end;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 #logo {
@@ -118,6 +120,8 @@ nav {
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 #headshot {
@@ -148,6 +152,7 @@ p {
     font-weight: 400;
     margin-bottom: 45px;
     margin-top: 25px;
+    width: 100vw;
 }
 
 footer {
@@ -182,7 +187,7 @@ footer a:hover {
 
 
 
-@media screen and (max-width: 1110px) {
+@media screen and (max-width: 860px) {
 
     .rows {
         display: flex;
@@ -226,6 +231,7 @@ footer a:hover {
         width: 60vw;
         margin-left: 0px;
         margin-right: 0px;
+        margin-top: 25px;
     }
 
     #headshot {
