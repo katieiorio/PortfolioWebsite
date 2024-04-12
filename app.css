@@ -6,6 +6,7 @@ body {
     animation: fadeInAnimation ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    width: 100%;
 }
 
 @keyframes fadeInAnimation {
@@ -21,7 +22,7 @@ body {
 nav {
     display: flex;
     justify-content: center;
-    margin-top: 2.5vh;
+    margin-top: 6vh;
     margin-bottom: 3vh;
     height: 12vh;
     align-items: flex-end;
@@ -158,7 +159,7 @@ p {
     margin-top: 0px;
 }
 
-.aboutHeader {
+.titleHeader {
     text-align: center;
     font-family: "Quicksand", sans-serif;
     color: #141414;
@@ -166,6 +167,57 @@ p {
     margin-bottom: 45px;
     margin-top: 25px;
     width: 100vw;
+}
+
+.amazonPageLayout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#amazonAplus {
+    width: 800px;
+}
+
+#amazonAlt {
+    width: 600px;
+    padding-top: 30px;
+}
+
+#amazonAplusText {
+    position: fixed;
+    z-index: 3;
+    top: 40vh;
+    right: 0;
+    width: 30vw;
+    height: auto;
+    font-family: "Quicksand", sans-serif;
+    color: #141414;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 15px 50px 9px 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: -5px 5px 15px rgba(117, 65, 65, 0.2);
+}
+
+#amazonAltText {
+    position: fixed;
+    z-index: 3;
+    top: 40vh;
+    left: 0;
+    width: 30vw;
+    height: auto;
+    font-family: "Quicksand", sans-serif;
+    color: #141414;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 15px 50px 9px 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: -5px 5px 15px rgba(117, 65, 65, 0.2);
+    display: none;
 }
 
 footer {
