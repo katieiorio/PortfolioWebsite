@@ -200,6 +200,7 @@ footer a:hover {
         flex-direction: column;
         align-items: center;
         margin-bottom: 5vh;
+        margin-top: 8vh;
     }
 
     .navLinks {
