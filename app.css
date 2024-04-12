@@ -3,6 +3,19 @@ body {
     height: auto;
     position: relative;
     min-height: 100vh;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 nav {
@@ -176,6 +189,7 @@ footer {
 footer a {
     color: #141414;
 }
+
 footer a:hover {
     text-decoration: none;
     font-family: "Quicksand", sans-serif;
@@ -200,11 +214,16 @@ footer a:hover {
         flex-direction: column;
         align-items: center;
         margin-bottom: 5vh;
+        margin-top: 8vh;
     }
 
     .navLinks {
         margin-top: 2.5vh;
         margin-bottom: 2.5vh;
+    }
+
+    .navLinksDiv {
+        margin-right: 15px;
     }
 
     footer {
@@ -227,7 +246,7 @@ footer a:hover {
         align-items: center;
     }
 
-    .aboutText{
+    .aboutText {
         width: 60vw;
         margin-left: 0px;
         margin-right: 0px;
