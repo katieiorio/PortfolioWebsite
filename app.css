@@ -1,12 +1,12 @@
+
 body {
     margin: 0px;
     height: auto;
-    position: relative;
     min-height: 100vh;
     animation: fadeInAnimation ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    width: 100%;
+    width: 100vw;
 }
 
 @keyframes fadeInAnimation {
@@ -155,9 +155,6 @@ nav {
     margin-top: 0px;
 }
 
-p {
-    margin-top: 0px;
-}
 
 .titleHeader {
     text-align: center;
@@ -177,17 +174,19 @@ p {
 }
 
 #amazonAplus {
-    width: 800px;
+    width: 600px;
 }
 
 #amazonAlt {
     width: 600px;
-    padding-top: 30px;
+    padding-top: 90px;
 }
 
 #amazonAplusText {
     position: fixed;
     z-index: 3;
+    display: flex;
+    flex-direction: column;
     top: 40vh;
     right: 0;
     width: 30vw;
@@ -195,8 +194,8 @@ p {
     font-family: "Quicksand", sans-serif;
     color: #141414;
     text-decoration: none;
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 15px;
+    line-height: 25px;
     padding: 15px 50px 9px 40px;
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: -5px 5px 15px rgba(117, 65, 65, 0.2);
@@ -208,6 +207,8 @@ p {
 #amazonAltText {
     position: fixed;
     z-index: 3;
+    display: flex;
+    flex-direction: column;
     top: 40vh;
     left: 0;
     width: 30vw;
@@ -215,12 +216,11 @@ p {
     font-family: "Quicksand", sans-serif;
     color: #141414;
     text-decoration: none;
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 15px;
+    line-height: 25px;
     padding: 15px 50px 9px 40px;
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: -5px 5px 15px rgba(117, 65, 65, 0.2);
-    display: none;
     animation: fadeInAnimation ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -316,5 +316,39 @@ footer a:hover {
         height: auto;
         object-fit: contain;
         padding-right: 0px;
+    }
+    .amazonContent {
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        padding: 0px 0px 0px 0px;
+    }
+
+    #amazonAplusText {
+        width: fit-content;
+        padding: 0px 20px 0px 20px;
+        height: 20vh;
+        top: 80vh;
+        line-height: 18px;
+        font-size: 11px;
+    }
+    #amazonAltText {
+        width: fit-content;
+        padding: 0px 20px 0px 20px;
+        height: 20vh;
+        top: 80vh;
+        line-height: 18px;
+        font-size: 11px;
+    }
+    
+    #amazonAplus {
+        width: 85vw;
+    }
+    
+    #amazonAlt {
+        width: 85vw;
+        padding-top: 90px;
     }
 }

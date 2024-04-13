@@ -26,24 +26,23 @@ imageTitleHover();
 
 function amazonScroll() {
     const scrollArray = [1];
-    let i = 0;
-    const amazonArrayLength = scrollArray.length;
     window.addEventListener('scroll', function () {
         scrollArray.push(window.scrollY);
         const lastIndex = scrollArray.length - 1;
-        if (scrollArray[lastIndex] >= 1416) {
+        if (scrollArray[lastIndex] >= 998) {
             const selectAmazonAplusText = document.getElementById("amazonAplusText");
             const selectAmazonAltText = document.getElementById("amazonAltText");
             selectAmazonAplusText.style.display = 'none';
-            selectAmazonAltText.style.display = 'block';
+            selectAmazonAltText.style.display = 'flex';
             console.log("yoyoyo");
         }
         else {
             const selectAmazonAplusText = document.getElementById("amazonAplusText");
             const selectAmazonAltText = document.getElementById("amazonAltText");
-            selectAmazonAplusText.style.display = 'block';
+            selectAmazonAplusText.style.display = 'flex';
             selectAmazonAltText.style.display = 'none';
             console.log("yoyoyo");
+            console.log(window.scrollY);
         }
     });
 }
