@@ -24,37 +24,28 @@ function imageTitleHover() {
 
 imageTitleHover();
 
-// console.log("joyoyo");
 function amazonScroll() {
-    let amazonContentObjects = document.querySelectorAll(".amazonContent");
-    let i = 0
-    let length = amazonContentObjects.length;
-    for (i; i < length; i++) {
-        window.addEventListener('scroll', () => {
-            const scrolled = window.scrollY;
+    const scrollArray = [1];
+    let i = 0;
+    const amazonArrayLength = scrollArray.length;
+    window.addEventListener('scroll', function () {
+        scrollArray.push(window.scrollY);
+        const lastIndex = scrollArray.length - 1;
+        if (scrollArray[lastIndex] >= 1416) {
+            const selectAmazonAplusText = document.getElementById("amazonAplusText");
+            const selectAmazonAltText = document.getElementById("amazonAltText");
+            selectAmazonAplusText.style.display = 'none';
+            selectAmazonAltText.style.display = 'block';
+            console.log("yoyoyo");
+        }
+        else {
+            const selectAmazonAplusText = document.getElementById("amazonAplusText");
+            const selectAmazonAltText = document.getElementById("amazonAltText");
+            selectAmazonAplusText.style.display = 'block';
+            selectAmazonAltText.style.display = 'none';
+            console.log("yoyoyo");
+        }
+    });
+}
 
-            if (scrolled >= 1416) {
-                const selectAmazonAplusText = document.getElementById("amazonAplusText");
-                const selectAmazonAltText = document.getElementById("amazonAltText");
-                selectAmazonAplusText.style.display = 'none';
-                selectAmazonAltText.style.display = 'block';
-            }
-            console.log(scrolled);
-        });
-
-
-
-
-
-
-// window.addEventListener('scroll', () => {
-//     const scrolled = window.scrollY;
-
-//     if (scrolled >= 1416) {
-//         const selectAmazonAplusText = document.getElementById("amazonAplusText");
-//         const selectAmazonAltText = document.getElementById("amazonAltText");
-//         selectAmazonAplusText.style.display = 'none';
-//         selectAmazonAltText.style.display = 'block';
-//     }
-//     console.log(scrolled);
-// });
+amazonScroll();
