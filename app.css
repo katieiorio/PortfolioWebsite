@@ -256,6 +256,12 @@ footer a:hover {
     text-decoration: none;
     color: #5386E4;
 }
+.motionGraphicsVideos {
+    width: 35vw;
+    height: auto;
+    object-fit: contain;
+    padding-right: 40px;
+}
 
 
 
