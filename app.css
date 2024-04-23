@@ -1,4 +1,3 @@
-
 body {
     margin: 0px;
     height: auto;
@@ -43,6 +42,7 @@ nav {
     background-color: transparent;
     width: 14vh;
     margin-bottom: 3px;
+    text-decoration: none;
 }
 
 .navLinks:hover {
@@ -246,6 +246,7 @@ footer {
 
 footer a {
     color: #141414;
+    text-decoration: none;
 }
 
 footer a:hover {
@@ -317,6 +318,7 @@ footer a:hover {
         object-fit: contain;
         padding-right: 0px;
     }
+
     .amazonContent {
         width: fit-content;
         display: flex;
@@ -334,6 +336,7 @@ footer a:hover {
         line-height: 18px;
         font-size: 11px;
     }
+
     #amazonAltText {
         width: fit-content;
         padding: 0px 20px 0px 20px;
@@ -342,11 +345,11 @@ footer a:hover {
         line-height: 18px;
         font-size: 11px;
     }
-    
+
     #amazonAplus {
         width: 85vw;
     }
-    
+
     #amazonAlt {
         width: 85vw;
         padding-top: 90px;
