@@ -34,7 +34,7 @@ nav {
 }
 
 .navLinks {
-    font-family: "Quicksand", sans-serif;
+    font-family: "Lexend", sans-serif;
     font-weight: 400;
     color: #141414;
     text-align: center;
@@ -47,7 +47,7 @@ nav {
 
 .navLinks:hover {
     text-decoration: none;
-    font-family: "Quicksand", sans-serif;
+    font-family: "Lexend", sans-serif;
     text-decoration: none;
     color: #5386E4;
 }
@@ -58,19 +58,19 @@ nav {
     justify-content: center;
 }
 
-.imageLinkContainer {
-    height: 100vh;
-}
 
 .rows {
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
-#homeImageLink1 {
+.homeImageLinks {
     width: 100%;
     aspect-ratio: 9/5;
-    background-image: url("img/pic1.jpg");
+}
+#homeImageLink1 {
+    background-image: url("img/developmentHome.png");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -79,9 +79,7 @@ nav {
 }
 
 #homeImageLink2 {
-    width: 100%;
-    aspect-ratio: 9/5;
-    background-image: url("img/pic2.jpg");
+    background-image: url("img/coffeeGIF.gif");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -90,8 +88,6 @@ nav {
 }
 
 #homeImageLink3 {
-    width: 100%;
-    aspect-ratio: 9/5;
     background-image: url("img/pic3.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -101,9 +97,7 @@ nav {
 }
 
 #homeImageLink4 {
-    width: 100%;
-    aspect-ratio: 9/5;
-    background-image: url("img/pic4.jpg");
+    background-image: url("img/amazonGIF.gif");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -113,20 +107,27 @@ nav {
 
 
 .homeImageHoverTitle {
-    text-align: center;
-    font-family: "Quicksand", sans-serif;
-    color: #141414;
-    text-decoration: none;
-    font-size: 1.7em;
     display: none;
     justify-content: flex-start;
     align-items: flex-end;
     opacity: 1;
     background-color: rgba(255, 255, 255, 0.8);
-    width: 100%;
     height: 100%;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.titleText {
+    text-align: left;
+    font-family: "Lexend", sans-serif;
+    font-weight: 800;
+    color: #141414;
+    text-decoration: none;
+    font-size: 40px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
 }
 
 .aboutContent {
@@ -146,7 +147,7 @@ nav {
 }
 
 .aboutText {
-    font-family: "Quicksand", sans-serif;
+    font-family: "Lexend", sans-serif;
     color: #141414;
     text-decoration: none;
     font-size: 16px;
@@ -158,76 +159,66 @@ nav {
 
 .titleHeader {
     text-align: center;
-    font-family: "Quicksand", sans-serif;
+    font-family: "Lexend", sans-serif;
     color: #141414;
     font-weight: 400;
     margin-bottom: 45px;
     margin-top: 25px;
 }
 
-.amazonPageLayout {
+.amazonRow1 {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
 }
-
-#amazonAplus {
-    width: 600px;
-}
-
-#amazonAlt {
-    width: 600px;
+.amazonRow2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     padding-top: 90px;
 }
 
+#amazonAplus {
+    width: 50%;
+}
+
+#amazonAlt {
+    width: 50%;
+}
+
 #amazonAplusText {
-    position: fixed;
-    z-index: 3;
     display: flex;
     flex-direction: column;
     top: 40vh;
     right: 0;
     width: 30vw;
     height: auto;
-    font-family: "Quicksand", sans-serif;
+    font-family: "Lexend", sans-serif;
     color: #141414;
     text-decoration: none;
     font-size: 15px;
     line-height: 25px;
-    padding: 15px 50px 9px 40px;
-    background-color: rgba(255, 255, 255, 0.8);
-    box-shadow: -5px 5px 15px rgba(117, 65, 65, 0.2);
-    animation: fadeInAnimation ease 1s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    padding: 80px 50px 9px 40px;
 }
 
 #amazonAltText {
-    position: fixed;
-    z-index: 3;
     display: flex;
     flex-direction: column;
     top: 40vh;
     left: 0;
     width: 30vw;
     height: auto;
-    font-family: "Quicksand", sans-serif;
+    font-family: "Lexend", sans-serif;
     color: #141414;
     text-decoration: none;
     font-size: 15px;
     line-height: 25px;
     padding: 15px 50px 9px 40px;
-    background-color: rgba(255, 255, 255, 0.8);
-    box-shadow: -5px 5px 15px rgba(117, 65, 65, 0.2);
-    animation: fadeInAnimation ease 1s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
 }
 
 footer {
     text-align: center;
-    font-family: "Quicksand", sans-serif;
+    font-family: "Lexend", sans-serif;
     color: #141414;
     position: relative;
     height: 15vh;
@@ -250,7 +241,7 @@ footer a {
 
 footer a:hover {
     text-decoration: none;
-    font-family: "Quicksand", sans-serif;
+    font-family: "Lexend", sans-serif;
     color: #141414;
     text-decoration: none;
     color: #5386E4;
@@ -289,7 +280,7 @@ footer a:hover {
 }
 
 #videoText1 {
-    font-family: "Quicksand", sans-serif;
+    font-family: "Lexend", sans-serif;
     color: #141414;
     text-decoration: none;
     font-size: 16px;
@@ -304,7 +295,7 @@ footer a:hover {
 }
 
 #videoText2 {
-    font-family: "Quicksand", sans-serif;
+    font-family: "Lexend", sans-serif;
     color: #141414;
     text-decoration: none;
     font-size: 16px;
@@ -384,31 +375,31 @@ footer a:hover {
         padding-right: 0px;
     }
 
-    .amazonContent {
-        width: fit-content;
+    .amazonRow1 {
         display: flex;
         justify-content: center;
         align-content: center;
         flex-direction: column;
-        padding: 0px 0px 0px 0px;
+    }
+    .amazonRow2 {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
     }
 
     #amazonAplusText {
         width: fit-content;
         padding: 0px 20px 0px 20px;
-        height: 20vh;
-        top: 80vh;
-        line-height: 18px;
-        font-size: 11px;
+        line-height: 24px;
+        font-size: 16px;
     }
 
     #amazonAltText {
         width: fit-content;
         padding: 0px 20px 0px 20px;
-        height: 20vh;
-        top: 80vh;
-        line-height: 18px;
-        font-size: 11px;
+        line-height: 24px;
+        font-size: 16px;
     }
 
     #amazonAplus {
@@ -417,6 +408,5 @@ footer a:hover {
 
     #amazonAlt {
         width: 85vw;
-        padding-top: 90px;
     }
 }
