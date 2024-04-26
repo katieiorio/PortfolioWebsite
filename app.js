@@ -39,7 +39,7 @@ function homeLinks() {
         }
         if (brandingDiv) {
             brandingDiv.addEventListener("click", function() {
-                window.location.href = "branding.html";
+                window.location.href = "visualDesign.html";
             });
         }
         if (amazonDiv) {
@@ -60,13 +60,13 @@ homeLinks();
 
 
 
-//katie's web development motto
+// //katie's web development motto
 
-if (hardwork === true) {
-    success();
-} else {
-    return "Condition does not exist";
-}
+// if (hardwork === true) {
+//     success();
+// } else {
+//     return "Condition does not exist";
+// }
 
 
 

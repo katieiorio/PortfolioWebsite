@@ -1,3 +1,5 @@
+/* all ////// */
+
 body {
     height: auto;
     min-height: 100vh;
@@ -17,6 +19,37 @@ body {
     100% {
         opacity: 1;
     }
+}
+
+footer {
+    text-align: center;
+    font-family: "Lexend", sans-serif;
+    color: #141414;
+    position: relative;
+    height: 15vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.footerElement {
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+footer a {
+    color: #141414;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: none;
+    font-family: "Lexend", sans-serif;
+    color: #141414;
+    text-decoration: none;
+    color: #5386E4;
 }
 
 nav {
@@ -58,6 +91,7 @@ nav {
     justify-content: center;
 }
 
+/* home/////////////////// */
 
 .rows {
     display: flex;
@@ -79,7 +113,7 @@ nav {
 }
 
 #homeImageLink2 {
-    background-image: url("img/coffeeGIF.gif");
+    background-image: url("img/coffeeGIFpurple.gif");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -130,6 +164,8 @@ nav {
     margin-bottom: 0;
 }
 
+/* about ///////////// */
+
 .aboutContent {
     display: flex;
     flex-direction: row;
@@ -162,35 +198,32 @@ nav {
     font-family: "Lexend", sans-serif;
     color: #141414;
     font-weight: 400;
-    margin-bottom: 45px;
-    margin-top: 25px;
+    margin-bottom: 90px;
+    margin-top: 50px;
 }
 
-.amazonRow1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-.amazonRow2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    padding-top: 90px;
-}
+/* project pages //////// */
 
-#amazonAplus {
-    width: 50%;
-}
-
-#amazonAlt {
-    width: 50%;
-}
-
-#amazonAplusText {
+.projectColumns {
     display: flex;
     flex-direction: column;
-    top: 40vh;
-    right: 0;
+}
+
+.projectRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-bottom: 180px;
+}
+
+.projectVisual {
+    width: 50%;
+}
+
+.projectWrittenContent {
+    display: flex;
+    flex-direction: column;
+   
     width: 30vw;
     height: auto;
     font-family: "Lexend", sans-serif;
@@ -198,54 +231,116 @@ nav {
     text-decoration: none;
     font-size: 15px;
     line-height: 25px;
-    padding: 80px 50px 9px 40px;
+    padding: 0px 0px 0px 40px;
 }
 
-#amazonAltText {
-    display: flex;
-    flex-direction: column;
-    top: 40vh;
-    left: 0;
-    width: 30vw;
-    height: auto;
-    font-family: "Lexend", sans-serif;
-    color: #141414;
-    text-decoration: none;
-    font-size: 15px;
-    line-height: 25px;
-    padding: 15px 50px 9px 40px;
+
+
+
+@media screen and (max-width: 860px) {
+
+    .rows {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5vh;
+        margin-top: 8vh;
+    }
+
+    .navLinks {
+        margin-top: 2.5vh;
+        margin-bottom: 2.5vh;
+    }
+
+    .navLinksDiv {
+        margin-right: 15px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+        height: 25vh;
+    }
+
+    .footerElement {
+        margin-right: 40px;
+        margin-top: 5px;
+    }
+
+/* about ///////// */
+
+    .aboutContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutText {
+        width: 60vw;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 25px;
+    }
+
+    #headshot {
+        width: 60vw;
+        height: auto;
+        object-fit: contain;
+        padding-right: 0px;
+    }
+
+    .projectRow {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+    }
+
+    .projectWrittenContent {
+        width: fit-content;
+        padding: 0px 0px 0px 0px;
+        line-height: 24px;
+        font-size: 16px;
+    }
+
+    .projectVisual {
+        width: 80vw;
+    }
 }
 
-footer {
-    text-align: center;
-    font-family: "Lexend", sans-serif;
-    color: #141414;
-    position: relative;
-    height: 15vh;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-}
 
-.footerElement {
-    margin-right: 40px;
-    margin-left: 40px;
-}
 
-footer a {
-    color: #141414;
-    text-decoration: none;
-}
 
-footer a:hover {
-    text-decoration: none;
-    font-family: "Lexend", sans-serif;
-    color: #141414;
-    text-decoration: none;
-    color: #5386E4;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* DNU
 
 .videoContent {
     display: flex;
@@ -315,98 +410,45 @@ footer a:hover {
     width: 100%;
 }
 
+/* development //////////////// 
 
-@media screen and (max-width: 860px) {
-
-    .rows {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 5vh;
-        margin-top: 8vh;
-    }
-
-    .navLinks {
-        margin-top: 2.5vh;
-        margin-bottom: 2.5vh;
-    }
-
-    .navLinksDiv {
-        margin-right: 15px;
-    }
-
-    footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        flex-direction: column;
-        height: 25vh;
-    }
-
-    .footerElement {
-        margin-right: 40px;
-        margin-top: 5px;
-    }
-
-    .aboutContent {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .aboutText {
-        width: 60vw;
-        margin-left: 0px;
-        margin-right: 0px;
-        margin-top: 25px;
-    }
-
-    #headshot {
-        width: 60vw;
-        height: auto;
-        object-fit: contain;
-        padding-right: 0px;
-    }
-
-    .amazonRow1 {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        flex-direction: column;
-    }
-    .amazonRow2 {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        flex-direction: column;
-    }
-
-    #amazonAplusText {
-        width: fit-content;
-        padding: 0px 20px 0px 20px;
-        line-height: 24px;
-        font-size: 16px;
-    }
-
-    #amazonAltText {
-        width: fit-content;
-        padding: 0px 20px 0px 20px;
-        line-height: 24px;
-        font-size: 16px;
-    }
-
-    #amazonAplus {
-        width: 85vw;
-    }
-
-    #amazonAlt {
-        width: 85vw;
-    }
+#fitnessCalendarText {
+    font-family: "Lexend", sans-serif;
+    color: #141414;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: left;
+    margin-left: 25%;
+    margin-right: 25%;
 }
+
+#calendarVideoFile {
+    object-fit: contain;
+    width: 50vw;
+}
+
+.developmentContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#developmentProject1 {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.developmentCenterVideoDiv {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+*/
