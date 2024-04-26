@@ -64,7 +64,12 @@ homeLinks();
 
 if (hardwork === true) {
     success();
-} else {null}
+} else {
+    return "Condition does not exist";
+}
+
+
+
 
 
 

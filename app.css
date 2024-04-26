@@ -70,7 +70,7 @@ nav {
     aspect-ratio: 9/5;
 }
 #homeImageLink1 {
-    background-image: url("img/developmentHome.png");
+    background-image: url("img/codingGIF.gif");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
