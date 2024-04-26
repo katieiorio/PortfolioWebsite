@@ -80,23 +80,23 @@ homeLinks();
 
 
 
-const webDiv = document.getElementById("homeImageLink1");
-const motionDiv = document.getElementById("homeImageLink2");
-const brandingDiv = document.getElementById("homeImageLink3");
-const amazonDiv = document.getElementById("homeImageLink4");
+// const webDiv = document.getElementById("homeImageLink1");
+// const motionDiv = document.getElementById("homeImageLink2");
+// const brandingDiv = document.getElementById("homeImageLink3");
+// const amazonDiv = document.getElementById("homeImageLink4");
 
-    webDiv.addEventListener('click', function() {
-        window.location.href = "development.html";
-    })
-    motionDiv.addEventListener('click', function() {
-        window.location.href = "motion.html";
-    })
-    brandingDiv.addEventListener('click', function() {
-        window.location.href = "branding.html";
-    })
-    amazonDiv.addEventListener('click', function() {
-        window.location.href = "amazon.html";
-    })
+//     webDiv.addEventListener('click', function() {
+//         window.location.href = "development.html";
+//     })
+//     motionDiv.addEventListener('click', function() {
+//         window.location.href = "motion.html";
+//     })
+//     brandingDiv.addEventListener('click', function() {
+//         window.location.href = "branding.html";
+//     })
+//     amazonDiv.addEventListener('click', function() {
+//         window.location.href = "amazon.html";
+//     })
 
 
     // function amazonScroll() {
