@@ -25,7 +25,7 @@ imageTitleHover();
 function homeLinks() {
     const webDiv = document.getElementById("homeImageLink1");
     const motionDiv = document.getElementById("homeImageLink2");
-    const brandingDiv = document.getElementById("homeImageLink3");
+    const visualDesignDiv = document.getElementById("homeImageLink3");
     const amazonDiv = document.getElementById("homeImageLink4");
         if (webDiv) {
             webDiv.addEventListener("click", function() {
@@ -37,8 +37,8 @@ function homeLinks() {
                 window.location.href = "motion.html";
             });
         }
-        if (brandingDiv) {
-            brandingDiv.addEventListener("click", function() {
+        if (visualDesignDiv) {
+            visualDesignDiv.addEventListener("click", function() {
                 window.location.href = "visualDesign.html";
             });
         }
