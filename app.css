@@ -6,9 +6,8 @@ body {
     animation: fadeInAnimation ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
+    width: 100%;
+    margin: 0px;
 }
 
 @keyframes fadeInAnimation {
@@ -23,7 +22,10 @@ body {
 
 footer {
     text-align: center;
-    font-family: "Lexend", sans-serif;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 350;
     color: #141414;
     position: relative;
     height: 15vh;
@@ -31,7 +33,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 100%;
 }
 
 .footerElement {
@@ -46,7 +48,10 @@ footer a {
 
 footer a:hover {
     text-decoration: none;
-    font-family: "Lexend", sans-serif;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #141414;
     color: #141414;
     text-decoration: none;
     color: #5386E4;
@@ -59,6 +64,8 @@ nav {
     margin-bottom: 3vh;
     height: 12vh;
     align-items: flex-end;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 #logo {
@@ -67,8 +74,10 @@ nav {
 }
 
 .navLinks {
-    font-family: "Lexend", sans-serif;
-    font-weight: 400;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 350;
     color: #141414;
     text-align: center;
     background-color: transparent;
@@ -80,7 +89,10 @@ nav {
 
 .navLinks:hover {
     text-decoration: none;
-    font-family: "Lexend", sans-serif;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #141414;
     text-decoration: none;
     color: #5386E4;
 }
@@ -154,7 +166,10 @@ nav {
 
 .titleText {
     text-align: left;
-    font-family: "Lexend", sans-serif;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #141414;
     font-weight: 800;
     color: #141414;
     text-decoration: none;
@@ -183,7 +198,10 @@ nav {
 }
 
 .aboutText {
-    font-family: "Lexend", sans-serif;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #141414;
     color: #141414;
     text-decoration: none;
     font-size: 16px;
@@ -195,9 +213,11 @@ nav {
 
 .titleHeader {
     text-align: center;
-    font-family: "Lexend", sans-serif;
-    color: #141414;
+    font-family: "Palanquin Dark", sans-serif;
     font-weight: 400;
+    font-style: normal;
+    font-size: 45px;
+    color: #141414;
     margin-bottom: 90px;
     margin-top: 50px;
 }
@@ -217,21 +237,23 @@ nav {
 }
 
 .projectVisual {
-    width: 50%;
+    width: 800px;
 }
 
 .projectWrittenContent {
     display: flex;
     flex-direction: column;
-   
     width: 30vw;
     height: auto;
-    font-family: "Lexend", sans-serif;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 350;
     color: #141414;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 17px;
     line-height: 25px;
-    padding: 0px 0px 0px 40px;
+    padding: 0px 0px 0px 60px;
 }
 
 
