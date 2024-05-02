@@ -8,6 +8,7 @@ body {
     animation-fill-mode: forwards;
     width: 100%;
     margin: 0px;
+    background-color: #F7F7F7;
 }
 
 @keyframes fadeInAnimation {
@@ -22,11 +23,9 @@ body {
 
 footer {
     text-align: center;
-    font-family: "Josefin Sans", sans-serif;
-    font-optical-sizing: auto;
+    font-family: "Hind", sans-serif;
+    font-weight: 300;
     font-style: normal;
-    font-weight: 350;
-    color: #141414;
     position: relative;
     height: 15vh;
     position: absolute;
@@ -42,22 +41,28 @@ footer {
 }
 
 footer a {
-    color: #141414;
+    color: #435058;
     text-decoration: none;
 }
 
 footer a:hover {
     text-decoration: none;
-    font-family: "Josefin Sans", sans-serif;
-    font-optical-sizing: auto;
+    font-family: "Hind", sans-serif;
+    font-weight: 300;
     font-style: normal;
-    color: #141414;
-    color: #141414;
     text-decoration: none;
     color: #5386E4;
 }
 
 nav {
+    display: flex;
+    justify-content: center;
+    height: 130px;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+nv {
     display: flex;
     justify-content: center;
     margin-top: 6vh;
@@ -66,19 +71,19 @@ nav {
     align-items: flex-end;
     margin-left: 10%;
     margin-right: 10%;
+    background-color: #C6DDF0;
 }
 
 #logo {
     flex-grow: 1;
-    width: 350px;
+    width: 300px;
 }
 
 .navLinks {
-    font-family: "Josefin Sans", sans-serif;
-    font-optical-sizing: auto;
+    font-family: "Hind", sans-serif;
+    font-weight: 500;
     font-style: normal;
-    font-weight: 350;
-    color: #141414;
+    color: #000000;
     text-align: center;
     background-color: transparent;
     width: auto;
@@ -89,18 +94,17 @@ nav {
 
 .navLinks:hover {
     text-decoration: none;
-    font-family: "Josefin Sans", sans-serif;
-    font-optical-sizing: auto;
+    font-family: "Hind", sans-serif;
+    font-weight: 500;
     font-style: normal;
-    color: #141414;
     text-decoration: none;
     color: #5386E4;
 }
 
 .navLinksDiv {
-    margin-bottom: 4px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 /* home/////////////////// */
@@ -108,12 +112,16 @@ nav {
 .rows {
     display: flex;
     flex-direction: row;
-    width: 100%;
+}
+
+.rowContainer{
+    margin-top: 30px;
 }
 
 .homeImageLinks {
     width: 100%;
     aspect-ratio: 9/5;
+    margin: 10px;
 }
 #homeImageLink1 {
     background-image: url("img/codingGIF.gif");
@@ -166,14 +174,13 @@ nav {
 
 .titleText {
     text-align: left;
-    font-family: "Josefin Sans", sans-serif;
+    font-family: "Mulish", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    color: #141414;
     font-weight: 800;
-    color: #141414;
+    color: #000000;
     text-decoration: none;
-    font-size: 40px;
+    font-size: 55px;
     padding-left: 20px;
     padding-bottom: 20px;
     margin-bottom: 0;
@@ -198,11 +205,10 @@ nav {
 }
 
 .aboutText {
-    font-family: "Josefin Sans", sans-serif;
-    font-optical-sizing: auto;
+    font-family: "Hind", sans-serif;
+    font-weight: 300;
     font-style: normal;
-    color: #141414;
-    color: #141414;
+    color: #3F4650;
     text-decoration: none;
     font-size: 16px;
     align-items: flex-start;
@@ -210,16 +216,25 @@ nav {
     margin-top: 0px;
 }
 
+.titleHeaderContainer {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    justify-content: center;
+    border-bottom: 2px solid #e4e7ea;
+    padding-bottom: 30px;
+}
 
 .titleHeader {
-    text-align: center;
-    font-family: "Palanquin Dark", sans-serif;
-    font-weight: 400;
+    text-align: left;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
     font-style: normal;
-    font-size: 45px;
-    color: #141414;
-    margin-bottom: 90px;
-    margin-top: 50px;
+    font-weight: 500;
+    font-size: 50px;
+    color: #000000;
+    letter-spacing: 1.5px;
 }
 
 /* project pages //////// */
@@ -227,6 +242,7 @@ nav {
 .projectColumns {
     display: flex;
     flex-direction: column;
+    margin-top: 80px;
 }
 
 .projectRow {
@@ -245,11 +261,10 @@ nav {
     flex-direction: column;
     width: 30vw;
     height: auto;
-    font-family: "Josefin Sans", sans-serif;
-    font-optical-sizing: auto;
+    font-family: "Hind", sans-serif;
+    font-weight: 300;
     font-style: normal;
-    font-weight: 350;
-    color: #141414;
+    color: #435058;
     text-decoration: none;
     font-size: 17px;
     line-height: 25px;
