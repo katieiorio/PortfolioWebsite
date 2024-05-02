@@ -62,17 +62,6 @@ nav {
     padding-left: 50px;
     padding-right: 50px;
 }
-nv {
-    display: flex;
-    justify-content: center;
-    margin-top: 6vh;
-    margin-bottom: 3vh;
-    height: 12vh;
-    align-items: flex-end;
-    margin-left: 10%;
-    margin-right: 10%;
-    background-color: #C6DDF0;
-}
 
 #logo {
     flex-grow: 1;
@@ -81,7 +70,7 @@ nv {
 
 .navLinks {
     font-family: "Hind", sans-serif;
-    font-weight: 500;
+    font-weight: 300;
     font-style: normal;
     color: #000000;
     text-align: center;
@@ -95,7 +84,7 @@ nv {
 .navLinks:hover {
     text-decoration: none;
     font-family: "Hind", sans-serif;
-    font-weight: 500;
+    font-weight: 300;
     font-style: normal;
     text-decoration: none;
     color: #5386E4;
@@ -165,7 +154,7 @@ nv {
     justify-content: flex-start;
     align-items: flex-end;
     opacity: 1;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.6);
     height: 100%;
     width: 100%;
     margin-bottom: 0;
@@ -259,22 +248,39 @@ nv {
 .projectWrittenContent {
     display: flex;
     flex-direction: column;
-    width: 30vw;
+    width: 300px;
     height: auto;
-    font-family: "Hind", sans-serif;
-    font-weight: 300;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
     font-style: normal;
-    color: #435058;
+    font-weight: 300;
+    color: #000000;
     text-decoration: none;
     font-size: 17px;
     line-height: 25px;
-    padding: 0px 0px 0px 60px;
+    padding: 0px 0px 0px 40px;
 }
 
 
 
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 1000px) {
+
+    .titleText {
+        font-size: 30px;
+    }
+
+    .titleHeader {
+        font-size: 6vw;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .titleHeaderContainer {
+        margin-bottom: 1vh;
+        margin-top: 2vh;
+        height: fit-content;
+        padding-bottom: 1vh;
+    }
 
     .rows {
         display: flex;
@@ -282,21 +288,35 @@ nv {
         align-items: center;
     }
 
+    #logo {
+        flex-grow: 1;
+        width: 30vw;
+        margin-top: 2vh;
+    }
+
     nav {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 5vh;
-        margin-top: 8vh;
+        margin-top: 20px;
+        height: 10vh;
     }
 
     .navLinks {
-        margin-top: 2.5vh;
-        margin-bottom: 2.5vh;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+
+    .rowContainer {
+        margin-top: 10px;
     }
 
     .navLinksDiv {
-        margin-right: 15px;
+        margin-right: 0px;
+        margin-top: 1vh;
+        margin-bottom: 2vh;
     }
 
     footer {
@@ -338,23 +358,52 @@ nv {
     .projectRow {
         display: flex;
         justify-content: center;
-        align-content: center;
+        align-items: center;
         flex-direction: column;
+        width: 100%;
     }
 
+    .projectWrittenContentDiv {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+    .projectWrittenContent {
+        width: 80vw;
+        padding: 0px 0px 0px 0px;
+        line-height: 24px;
+        font-size: 16px;
+    }
+
+    .projectColumns {
+        margin-top: 4vh;
+    }
+
+    .projectVisualDiv {
+        display: flex;
+        justify-content: center;
+        width: fit-content;
+    }
+    .projectVisual {
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 1150px)  and (min-width: 1000px){
+    .projectVisual {
+        width: 80vw;
+    }
+    .projectWrittenContentDiv {
+        width: 20vw;
+        padding-left: 20px;
+    }
     .projectWrittenContent {
         width: fit-content;
         padding: 0px 0px 0px 0px;
         line-height: 24px;
         font-size: 16px;
     }
-
-    .projectVisual {
-        width: 80vw;
-    }
 }
-
-
 
 
 
