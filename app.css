@@ -56,7 +56,7 @@ footer a:hover {
 
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     height: 130px;
     align-items: center;
     padding-left: 50px;
@@ -66,6 +66,10 @@ nav {
 #logo {
     flex-grow: 1;
     width: 300px;
+}
+
+#logoDiv{
+    height: fit-content;
 }
 
 .navLinks {
@@ -206,7 +210,7 @@ nav {
 }
 
 .titleHeaderContainer {
-    height: 50px;
+    height: fit-content;
     display: flex;
     align-items: center;
     margin-bottom: 30px;
@@ -261,23 +265,118 @@ nav {
     padding: 0px 0px 0px 40px;
 }
 
+/* form */
 
+/* Style inputs, select elements and textareas */
 
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    font-family: "Hnd", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+    background-color: #000000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-top: 20px;
+    font-family: "Hnd", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .formContainer {
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 100px;
+    margin-top: 6px;
+  }
+
+  .col-75 {
+    float: left;
+    width: 500px;
+    margin-top: 6px;
+  }
+  
+  .formRow {
+    display: flex;
+    justify-content: center;
+    width: 70vw;
+  }
+  .thankYouHeader {
+    text-align: center;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    color: #000000;
+    letter-spacing: 1.5px;
+}
+.thankYouBody {
+    font-family: "Hind", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #3F4650;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 0px;
+}
+#thankYouLogo {
+    width: 40vw;
+}
+.thankYouPageLayout {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.thankYouLogoDiv {
+    display: flex;
+    justify-content: center;
+}
 
 @media screen and (max-width: 1000px) {
+
 
     .titleText {
         font-size: 30px;
     }
 
     .titleHeader {
-        font-size: 6vw;
+        font-size: 8vw;
         margin-top: 0px;
         margin-bottom: 0px;
     }
     .titleHeaderContainer {
-        margin-bottom: 1vh;
-        margin-top: 2vh;
+        margin-bottom: 10px;
         height: fit-content;
         padding-bottom: 1vh;
     }
@@ -290,8 +389,7 @@ nav {
 
     #logo {
         flex-grow: 1;
-        width: 30vw;
-        margin-top: 2vh;
+        width: 60vw;
     }
 
     nav {
@@ -299,12 +397,10 @@ nav {
         flex-direction: column;
         align-items: center;
         margin-top: 20px;
-        height: 10vh;
+        height: fit-content;
     }
 
     .navLinks {
-        margin-top: 1vh;
-        margin-bottom: 1vh;
         margin-left: 3vw;
         margin-right: 3vw;
     }
@@ -315,8 +411,8 @@ nav {
 
     .navLinksDiv {
         margin-right: 0px;
-        margin-top: 1vh;
-        margin-bottom: 2vh;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
     footer {
@@ -389,6 +485,14 @@ nav {
     }
 }
 
+/* /////////// form */
+
+.formContainer {
+    display: flex;
+    justify-content: center;
+}
+
+
 @media screen and (max-width: 1150px)  and (min-width: 1000px){
     .projectVisual {
         width: 80vw;
@@ -404,7 +508,6 @@ nav {
         font-size: 16px;
     }
 }
-
 
 
 
