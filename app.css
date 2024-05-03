@@ -195,15 +195,18 @@ nav {
     height: auto;
     object-fit: contain;
     padding-right: 40px;
+    margin-top: 24px;
 }
 
 .aboutText {
-    font-family: "Hind", sans-serif;
-    font-weight: 300;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
     font-style: normal;
-    color: #3F4650;
+    font-weight: 200;
+    color: #000000;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 15px;
+    line-height: 25px;
     align-items: flex-start;
     width: 700px;
     margin-top: 0px;
@@ -246,21 +249,22 @@ nav {
 }
 
 .projectVisual {
-    width: 800px;
+    width: 900px;
+    padding-left: 100px;
 }
 
 .projectWrittenContent {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 400px;
     height: auto;
     font-family: "Lexend", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 200;
     color: #000000;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 15px;
     line-height: 25px;
     padding: 0px 0px 0px 40px;
 }
@@ -285,7 +289,6 @@ input[type=text], select, textarea{
     font-family: "Hnd", sans-serif;
     font-weight: 300;
     font-style: normal;
-    color: #ffffff;
     text-decoration: none;
     font-size: 14px;
   }
@@ -303,7 +306,6 @@ input[type=text], select, textarea{
     font-family: "Hnd", sans-serif;
     font-weight: 300;
     font-style: normal;
-    color: #ffffff;
     text-decoration: none;
     font-size: 16px;
   }
@@ -371,9 +373,10 @@ input[type=text], select, textarea{
     }
 
     .titleHeader {
-        font-size: 8vw;
+        font-size: 6vw;
         margin-top: 0px;
         margin-bottom: 0px;
+        text-align: center;
     }
     .titleHeaderContainer {
         margin-bottom: 10px;
@@ -438,14 +441,14 @@ input[type=text], select, textarea{
     }
 
     .aboutText {
-        width: 60vw;
+        width: 90vw;
         margin-left: 0px;
         margin-right: 0px;
         margin-top: 25px;
     }
 
     #headshot {
-        width: 60vw;
+        width: 100vw;
         height: auto;
         object-fit: contain;
         padding-right: 0px;
@@ -457,6 +460,7 @@ input[type=text], select, textarea{
         align-items: center;
         flex-direction: column;
         width: 100%;
+        padding-bottom: 40px;
     }
 
     .projectWrittenContentDiv {
@@ -465,10 +469,10 @@ input[type=text], select, textarea{
         justify-content: center;
     }
     .projectWrittenContent {
-        width: 80vw;
+        width: 90vw;
         padding: 0px 0px 0px 0px;
         line-height: 24px;
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .projectColumns {
@@ -482,6 +486,7 @@ input[type=text], select, textarea{
     }
     .projectVisual {
         width: 100vw;
+        padding-left: 0px;
     }
 }
 
@@ -493,9 +498,9 @@ input[type=text], select, textarea{
 }
 
 
-@media screen and (max-width: 1150px)  and (min-width: 1000px){
+@media screen and (max-width: 1440px)  and (min-width: 1000px){
     .projectVisual {
-        width: 80vw;
+        width: 60vw;
     }
     .projectWrittenContentDiv {
         width: 20vw;
@@ -505,7 +510,7 @@ input[type=text], select, textarea{
         width: fit-content;
         padding: 0px 0px 0px 0px;
         line-height: 24px;
-        font-size: 16px;
+        font-size: 15px;
     }
 }
 
