@@ -245,28 +245,68 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    padding-bottom: 180px;
+    padding-bottom: 80px;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 
+.projectVisualDiv {
+    width: 60vw;
+}
 .projectVisual {
-    width: 900px;
-    padding-left: 100px;
+    width: 100%;
+    padding-left: 0px;
 }
 
 .projectWrittenContent {
     display: flex;
     flex-direction: column;
-    width: 400px;
     height: auto;
     font-family: "Lexend", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    font-weight: 200;
+    font-weight: 300;
     color: #000000;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 25px;
-    padding: 0px 0px 0px 40px;
+}
+.projectWrittenContentDiv {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    padding: 0 0 0 2vw;
+}
+.projectWrittenContentHeader {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: auto;
+    font-family: "Lexend", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    color: #000000;
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 25px;
+    margin: 0 0 14px 0;
+}
+
+.projectSkillsDiv {
+    display: flex;
+    flex-direction: row;
+}
+.projectSkills {
+    background-color: #000000;
+    color: white;
+    border-radius: 5px;
+    margin-right: 12px;
+    padding: 4px 7px 4px 7px;
+    font-family: "Mulish", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
 
 /* form */
@@ -459,20 +499,26 @@ input[type=text], select, textarea{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 100%;
+        width: 90vw;
         padding-bottom: 40px;
     }
 
     .projectWrittenContentDiv {
-        width: 100vw;
+        width: 90vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 0 0 0;
+    }
+    .projectWrittenContent {
+        line-height: 24px;
+        font-size: 15px;
         display: flex;
         justify-content: center;
     }
-    .projectWrittenContent {
-        width: 90vw;
-        padding: 0px 0px 0px 0px;
-        line-height: 24px;
-        font-size: 15px;
+    .projectWrittenContentHeader {
+        width: 80vw;
+        line-height: 35px;
     }
 
     .projectColumns {
@@ -482,10 +528,11 @@ input[type=text], select, textarea{
     .projectVisualDiv {
         display: flex;
         justify-content: center;
-        width: fit-content;
+        width: 90vw;
+        margin: 0 0 35px 0;
     }
     .projectVisual {
-        width: 100vw;
+        width: 90vw;
         padding-left: 0px;
     }
 }
@@ -498,21 +545,6 @@ input[type=text], select, textarea{
 }
 
 
-@media screen and (max-width: 1440px)  and (min-width: 1000px){
-    .projectVisual {
-        width: 60vw;
-    }
-    .projectWrittenContentDiv {
-        width: 20vw;
-        padding-left: 20px;
-    }
-    .projectWrittenContent {
-        width: fit-content;
-        padding: 0px 0px 0px 0px;
-        line-height: 24px;
-        font-size: 15px;
-    }
-}
 
 
 
@@ -532,117 +564,3 @@ input[type=text], select, textarea{
 
 
 
-
-
-/* DNU
-
-.videoContent {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-#motionGraphicsVideo1 {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 50px;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-#motionGraphicsVideo2 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-#motionVideoFile1 {
-    object-fit: contain;
-    width: 40vw;
-}
-
-#motionVideoFile2 {
-    object-fit: contain;
-    width: 40vw;
-}
-
-#videoText1 {
-    font-family: "Lexend", sans-serif;
-    color: #141414;
-    text-decoration: none;
-    font-size: 16px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    margin-top: 20px;
-    text-align: left;
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
-}
-
-#videoText2 {
-    font-family: "Lexend", sans-serif;
-    color: #141414;
-    text-decoration: none;
-    font-size: 16px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    margin-top: 20px;
-    text-align: left;
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
-}
-
-.centerVideoDiv {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-/* development //////////////// 
-
-#fitnessCalendarText {
-    font-family: "Lexend", sans-serif;
-    color: #141414;
-    text-decoration: none;
-    font-size: 16px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    margin-top: 20px;
-    text-align: left;
-    margin-left: 25%;
-    margin-right: 25%;
-}
-
-#calendarVideoFile {
-    object-fit: contain;
-    width: 50vw;
-}
-
-.developmentContent {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-#developmentProject1 {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 50px;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-.developmentCenterVideoDiv {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-*/
