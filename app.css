@@ -66,6 +66,7 @@ nav {
 #logo {
     flex-grow: 1;
     width: 300px;
+    cursor: pointer;
 }
 
 #logoDiv{
@@ -83,6 +84,7 @@ nav {
     margin-bottom: 3px;
     text-decoration: none;
     margin-left: 60px;
+    cursor: pointer;
 }
 
 .navLinks:hover {
@@ -115,6 +117,7 @@ nav {
     width: 100%;
     aspect-ratio: 9/5;
     margin: 10px;
+    cursor: pointer;
 }
 #homeImageLink1 {
     background-image: url("img/codingGIF.gif");
@@ -252,6 +255,7 @@ nav {
 
 .projectVisualDiv {
     width: 60vw;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .075);
 }
 .projectVisual {
     width: 100%;
@@ -288,7 +292,7 @@ nav {
     color: #000000;
     text-decoration: none;
     font-size: 30px;
-    line-height: 25px;
+    line-height: 35px;
     margin: 0 0 14px 0;
 }
 
@@ -389,11 +393,11 @@ input[type=text], select, textarea{
     color: #3F4650;
     text-decoration: none;
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
     margin-top: 0px;
 }
 #thankYouLogo {
-    width: 40vw;
+    width: 30vw;
 }
 .thankYouPageLayout {
     display: flex;
@@ -403,6 +407,25 @@ input[type=text], select, textarea{
 .thankYouLogoDiv {
     display: flex;
     justify-content: center;
+}
+.linkButton {
+    background-color:rgb(180, 180, 180);
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+    border-color: rgb(175, 175, 175);
+    border: none;
+    font-family: "Hind", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    width: fit-content;
+    padding: 4px 30px 4px 30px;
+    margin-top: 16px;
+
+}
+.linkButton:hover {
+    background-color:rgb(115, 115, 115);
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1000px) {
@@ -512,9 +535,12 @@ input[type=text], select, textarea{
     }
     .projectWrittenContent {
         line-height: 24px;
-        font-size: 15px;
+        font-size: 16px;
         display: flex;
         justify-content: center;
+    }
+    p {
+        margin: 0 0 0 0;
     }
     .projectWrittenContentHeader {
         width: 80vw;
