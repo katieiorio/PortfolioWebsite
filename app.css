@@ -596,6 +596,7 @@ input[type=submit] {
     .projectVisualDiv {
         display: flex;
         justify-content: center;
+        flex-direction: column;
         width: 90vw;
         margin: 0 0 35px 0;
     }
@@ -603,6 +604,8 @@ input[type=submit] {
     .projectVisual {
         width: 90vw;
         padding-left: 0px;
+        display: flex;
+        flex-direction: column;
     }
 
     #thankYouLogo {
