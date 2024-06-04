@@ -69,7 +69,7 @@ nav {
     cursor: pointer;
 }
 
-#logoDiv{
+#logoDiv {
     height: fit-content;
 }
 
@@ -109,7 +109,7 @@ nav {
     flex-direction: row;
 }
 
-.rowContainer{
+.rowContainer {
     margin-top: 0px;
 }
 
@@ -119,6 +119,7 @@ nav {
     margin: 10px;
     cursor: pointer;
 }
+
 #homeImageLink1 {
     background-image: url("img/codingGIF.gif");
     background-size: cover;
@@ -192,7 +193,8 @@ nav {
     margin-left: 50px;
     margin-right: 50px;
 }
-.aboutTextP{
+
+.aboutTextP {
     font-family: "Lexend", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -266,6 +268,7 @@ nav {
 .projectVisualDiv {
     width: 60vw;
 }
+
 .projectVisual {
     width: 100%;
     padding-left: 0px;
@@ -284,12 +287,14 @@ nav {
     font-size: 14px;
     line-height: 25px;
 }
+
 .projectWrittenContentDiv {
     display: flex;
     flex-direction: column;
     width: 30vw;
     padding: 0 0 0 2vw;
 }
+
 .projectWrittenContentHeader {
     display: flex;
     flex-direction: column;
@@ -309,6 +314,7 @@ nav {
     display: flex;
     flex-direction: row;
 }
+
 .projectSkills {
     background-color: #000000;
     color: white;
@@ -322,6 +328,13 @@ nav {
     margin-bottom: 4px;
 }
 
+#calendarVideo {
+    filter: drop-shadow(5px 5px 10px #c7c7c7);
+}
+
+
+
+
 /* form */
 
 /* Style inputs, select elements and textareas */
@@ -332,7 +345,9 @@ form {
     flex-direction: column;
 }
 
-input[type=text], select, textarea{
+input[type=text],
+select,
+textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -344,11 +359,12 @@ input[type=text], select, textarea{
     font-style: normal;
     text-decoration: none;
     font-size: 14px;
-  }
-  
-  /* Style the submit button */
-  input[type=submit] {
-    background-color: #724CF9;;
+}
+
+/* Style the submit button */
+input[type=submit] {
+    background-color: #724CF9;
+    ;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -361,31 +377,32 @@ input[type=text], select, textarea{
     font-style: normal;
     text-decoration: none;
     font-size: 16px;
-  }
-  
-  .formContainer {
+}
+
+.formContainer {
     border-radius: 5px;
     padding: 20px;
-  }
-  
-  .col-25 {
+}
+
+.col-25 {
     float: left;
     width: 100px;
     margin-top: 6px;
-  }
+}
 
-  .col-75 {
+.col-75 {
     float: left;
     width: 500px;
     margin-top: 6px;
-  }
-  
-  .formRow {
+}
+
+.formRow {
     display: flex;
     justify-content: center;
     width: 70vw;
-  }
-  .thankYouHeader {
+}
+
+.thankYouHeader {
     text-align: center;
     font-family: "Lexend", sans-serif;
     font-optical-sizing: auto;
@@ -395,6 +412,7 @@ input[type=text], select, textarea{
     color: #000000;
     letter-spacing: 1.5px;
 }
+
 .thankYouBody {
     font-family: "Hind", sans-serif;
     font-weight: 300;
@@ -405,20 +423,24 @@ input[type=text], select, textarea{
     font-size: 20px;
     margin-top: 0px;
 }
+
 #thankYouLogo {
     width: 22vw;
 }
+
 .thankYouPageLayout {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
+
 .thankYouLogoDiv {
     display: flex;
     justify-content: center;
 }
+
 .linkButton {
-    background-color:#724CF9;
+    background-color: #724CF9;
     color: rgb(255, 255, 255);
     border-radius: 30px;
     border-color: #724CF9;
@@ -432,10 +454,12 @@ input[type=text], select, textarea{
     margin-top: 16px;
 
 }
+
 .linkButton:hover {
-    background-color:#5e3ed2;
+    background-color: #5e3ed2;
     cursor: pointer;
 }
+
 .linkButton:visited {
     color: white;
 }
@@ -453,6 +477,7 @@ input[type=text], select, textarea{
         margin-bottom: 0px;
         text-align: center;
     }
+
     .titleHeaderContainer {
         margin-bottom: 10px;
         height: fit-content;
@@ -507,7 +532,7 @@ input[type=text], select, textarea{
         margin-top: 5px;
     }
 
-/* about ///////// */
+    /* about ///////// */
 
     .aboutContent {
         display: flex;
@@ -515,7 +540,7 @@ input[type=text], select, textarea{
         align-items: center;
     }
 
-    .aboutText{
+    .aboutText {
         width: 90vw;
         margin-left: 0px;
         margin-right: 0px;
@@ -545,6 +570,7 @@ input[type=text], select, textarea{
         flex-direction: column;
         padding: 0 0 0 0;
     }
+
     .projectWrittenContent {
         line-height: 24px;
         font-size: 16px;
@@ -553,9 +579,11 @@ input[type=text], select, textarea{
         padding-top: 8px;
         padding-bottom: 8px;
     }
+
     p {
         margin: 0 0 0 0;
     }
+
     .projectWrittenContentHeader {
         width: 80vw;
         line-height: 35px;
@@ -571,14 +599,17 @@ input[type=text], select, textarea{
         width: 90vw;
         margin: 0 0 35px 0;
     }
+
     .projectVisual {
         width: 90vw;
         padding-left: 0px;
     }
+
     #thankYouLogo {
         width: 50vw;
     }
-    .aboutTextP{
+
+    .aboutTextP {
         padding-top: 8px;
         padding-bottom: 8px;
     }
@@ -590,24 +621,3 @@ input[type=text], select, textarea{
     display: flex;
     justify-content: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
