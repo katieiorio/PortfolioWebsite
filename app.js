@@ -16,11 +16,27 @@ function imageTitleHover() {
                     imageHovers[index].firstElementChild.style.display = 'none';
                 };
             }(i));
+        }
+        if (window.matchMedia("(max-width: 1000px)").matches) {
+            for (let i = 0; i < imageHovers.length; i++) {
+                imageHovers[i].firstElementChild.style.display = 'flex';
+            }
         };
     };
 };
 
 imageTitleHover();
+
+// function mobileDisplayHome() {
+//     let mobileDisplayImages = document.querySelectorAll(".homeImageLinks");
+//     if (window.matchMedia("(max-width: 860px)").matches) {
+//         for (let i = 0; i < mobileDisplayImages.length; i++) {
+//             mobileDisplayImages[i].style.display = 'flex';
+//         }
+//     }
+// };
+
+// mobileDisplayHome();
 
 function homeLinks() {
     const webDiv = document.getElementById("homeImageLink1");
